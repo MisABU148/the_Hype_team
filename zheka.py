@@ -62,10 +62,10 @@ def callback(message):
             for x in opts['tbr']:
                 #print('трабл')
                 cmd = cmd.replace(x, "").strip()
-            print("отсек слово включть")
+            #print("отсек слово включть")
         #print("Работаем1 " + cmd)
         cmd = match_two_words(cmd)
-        print("Итоговая команда: " + cmd)
+        #print("Итоговая команда: " + cmd)
         execute_cmd(cmd)
 
     except:
@@ -85,11 +85,11 @@ def match_two_words(word_1):
 
 def execute_cmd(cmd):
     if cmd == "привет":
-        print("салам")
+        #print("салам")
         say_message("салам")
 
     elif cmd == 'что по чем':
-        print("сотка")
+        #print("сотка")
         say_message("сотка")
 
     elif cmd == 'красный':
@@ -97,7 +97,7 @@ def execute_cmd(cmd):
         say_message("принято, выполняю")
         b = bytes("r", encoding='utf-8')
         ard.write(b)
-        print("color: red")
+        #print("color: red")
 
     elif cmd == 'оранжевый':
         print("принято, выполняю")
